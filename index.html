@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 광진구퀵서비스 맞춤 운송 차종 안내</h3>
+          <p>중곡동 능동 구의동 광장동 자양동 화양동 군자동 광진 동서울터미널 화양리 군자교 건대 천호대로 아차산 워커힐 테크노마트 광진구 전지역</p>
             <ul>
                 <li>🏍️ 광진구오토바이퀵 : 기동성을 바탕으로 한 소화물 급송 서비스</li>
                 <li>🚙 광진구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+  <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
